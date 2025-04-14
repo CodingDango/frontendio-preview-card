@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: 'Figtree';
+      src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format('truetype'); /* Adjust the path and format as needed */
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    html {
+      font-family: "Figtree", sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: hsl(47, 88%, 63%);
+      margin: 0;
+      padding: 2rem;
+    }
+
+    #preview-card {
+      height: 450px;
+      width: max(140px, min(300px, 30%));
+      background: white;
+      padding: 1rem;
+      margin: 1rem;
+      border: 2px solid black;
+      border-radius: 20px;
+      box-shadow: 5px 5px 0 2px black;
+      transition: transform 200ms ease;
+      cursor: pointer;
+    }
+
+    #preview-card:hover {
+      transform: translateY(-3px);
+    }
+
+    #preview-card > img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    #preview-card span {
+      margin-top: 1rem;
+      gap: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+
+    #preview-card span > img {
+      width: 30px;
+      height: 30px;
+    }
+
+    #preview-card .category {
+      background-color: hsl(47, 88%, 63%);
+      padding: 0.25rem;
+      margin-top: 1rem;
+      width: min-content;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #preview-card .title {
+      color: hsl(47, 88%, 63%);
+    }
+
+    #preview-card .description {
+      color: rgba(0, 0, 0, 0.702);
+    }
+
+    #preview-card .author {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <article id="preview-card">
+    <img src="./assets/images/illustration-article.svg">
+    <p class="category">Learning</p>
+    <p class="pub-date">Published <time datetime="2023-12-21"></time>21 Dec 2023</time></p>
+    <h3 class="title">HTML & CSS foundations</h3>
+    <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <span>
+      <img src="./assets/images/image-avatar.webp">
+      <p class="author">Greg Hooper</p>
+    </span>
+
+  </article>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dango Dono (me)</a>.
+  </div>
+</body>
+</html>
