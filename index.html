@@ -17,7 +17,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    html, body {
+    html {
       font-family: "Figtree", sans-serif;
       min-height: 100vh;
     }
@@ -32,16 +32,14 @@
       align-items: center;
       flex-direction: column;
       background-color: hsl(47, 88%, 63%);
-      margin: 0;
-      padding: 2rem;
+      min-height: 100vh;
     }
 
     #preview-card {
-      height: 100%;
-      width: 100%;
-      max-width: 400px;
+      height: 450px;
+      width: max(140px, min(300px, 30%));
       background: white;
-      padding: 1rem;
+      padding: 1.5rem;
       margin: 1rem;
       border: 2px solid black;
       border-radius: 20px;
@@ -123,7 +121,8 @@
     <div class="author-info">
       <img src="./assets/images/image-avatar.webp" alt="Greg Hooper avatar">
       <p class="author">Greg Hooper</p>
-    </div>  
+    </span>
+
   </article>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
